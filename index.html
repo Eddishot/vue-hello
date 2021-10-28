@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <title>Document</title>
 </head>
 <body>
+    <header id="message">
+        <div class="container">
+            <h1 v-bind:ciao="username" 
+                v-bind:title="titoloH1">
+                Bentornato {{username}}
+            </h1>
+
+            <input type="text" v-model ="username" 
+            v-bind:placeholder="userPlaceholder">
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
     <script src="js/javascript.js"></script>
 </body>
 </html>
